@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Assistant</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="chat">
+    <header class="chat-header">
+      <div>
+        <h1>AI Assistant</h1>
+        <p class="subtitle">Assistente virtual com inteligência artificial</p>
+      </div>
+      <span id="mode-badge" class="badge">verificando...</span>
+    </header>
+
+    <section id="messages" class="messages" aria-live="polite">
+      <div class="message assistant">Olá! Sou o AI Assistant. Como posso ajudar você hoje?</div>
+    </section>
+
+    <p id="error" class="error" role="alert" hidden></p>
+
+    <form id="chat-form" class="chat-form">
+      <textarea
+        id="message-input"
+        rows="1"
+        maxlength="4000"
+        placeholder="Digite sua mensagem... (Enter envia, Shift+Enter quebra linha)"
+        aria-label="Mensagem"
+        required
+      ></textarea>
+      <button id="send-button" type="submit">Enviar</button>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
