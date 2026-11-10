@@ -4,6 +4,10 @@ Aplicação web de chat com inteligência artificial. O usuário conversa pelo n
 
 O projeto também funciona **sem chave de API**, em *modo demonstração*: o servidor responde com uma mensagem simulada, o que permite testar toda a aplicação sem custo.
 
+![Tela do AI Assistant: conversa em modo demonstração](docs/screenshot.jpg)
+
+*Interface do chat rodando em modo demonstração (sem chave de API).*
+
 ## Funcionalidades
 
 - Interface de chat responsiva, com tema claro e escuro automáticos.
@@ -54,6 +58,8 @@ ai-assistant/
 │   ├── config.py        # configurações lidas do .env
 │   ├── ai_client.py     # comunicação com a API de IA
 │   └── main.py          # servidor FastAPI e rotas
+├── docs/
+│   └── screenshot.jpg   # print da interface usado neste README
 ├── static/
 │   ├── index.html       # estrutura da página de chat
 │   ├── style.css        # aparência
